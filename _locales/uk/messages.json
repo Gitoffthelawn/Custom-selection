@@ -6,10 +6,10 @@
     "message": "Налаштуйте виділення тексту: кольори, тіні та декор. Оновлення в реальному часі, глобальні та окремі теми для сайтів."
   },
   "popupColorFieldName": {
-    "message": "Колір"
+    "message": "Колір тексту"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Колір фону"
+    "message": "Колір виділення"
   },
   "popupTextShadowColorFieldName": {
     "message": "Колір тіні тексту"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "Помилка збереження налаштувань"
+  },
+  "popupPreviewBefore": {
+    "message": "Звичайний текст."
+  },
+  "popupPreviewSelected": {
+    "message": "Так виглядає виділення."
+  },
+  "popupPreviewAfter": {
+    "message": "Ще трохи тексту."
+  },
+  "popupRateHeading": {
+    "message": "Оцініть це розширення"
+  },
+  "popupRateBody": {
+    "message": "Якщо розширення корисне, оцінка дуже допомагає."
   }
 }

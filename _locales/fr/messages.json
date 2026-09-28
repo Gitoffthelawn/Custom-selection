@@ -6,10 +6,10 @@
     "message": "Personnalisez la sélection de texte : couleurs, ombres et décorations. Mises à jour en temps réel, thèmes globaux ou par site."
   },
   "popupColorFieldName": {
-    "message": "Couleur"
+    "message": "Couleur du texte"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Couleur de l'arrière plan"
+    "message": "Couleur de surlignage"
   },
   "popupTextShadowColorFieldName": {
     "message": "Couleur de l'ombre du texte"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "Erreur lors de l'enregistrement des préférences"
+  },
+  "popupPreviewBefore": {
+    "message": "Texte normal ici."
+  },
+  "popupPreviewSelected": {
+    "message": "Voici à quoi ressemble la sélection."
+  },
+  "popupPreviewAfter": {
+    "message": "Encore du texte ici."
+  },
+  "popupRateHeading": {
+    "message": "Noter cette extension"
+  },
+  "popupRateBody": {
+    "message": "Si elle vous est utile, une note aide beaucoup."
   }
 }

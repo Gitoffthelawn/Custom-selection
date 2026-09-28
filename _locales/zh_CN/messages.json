@@ -6,10 +6,10 @@
     "message": "完全自定义文本选择：颜色、阴影和装饰。支持全局及特定域名的实时主题更新。"
   },
   "popupColorFieldName": {
-    "message": "颜色"
+    "message": "文字颜色"
   },
   "popupBackgroundColorFieldName": {
-    "message": "背景颜色"
+    "message": "高亮颜色"
   },
   "popupTextShadowColorFieldName": {
     "message": "文字阴影颜色"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "保存首选项时出错"
+  },
+  "popupPreviewBefore": {
+    "message": "这是普通文本。"
+  },
+  "popupPreviewSelected": {
+    "message": "选中后就是这个样子。"
+  },
+  "popupPreviewAfter": {
+    "message": "后面还有文本。"
+  },
+  "popupRateHeading": {
+    "message": "为此扩展程序评分"
+  },
+  "popupRateBody": {
+    "message": "如果觉得有用，评分对我帮助很大。"
   }
 }

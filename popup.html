@@ -1,67 +1,97 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./popup.css">
-    <title>Custom selection</title>
-    <script src="jscolor.min.js"></script>
-  </head>
-  <body>
-    <h1 id="title">__MSG_appName__</h1>
-    <a id="theme-library-link" href="https://projects.noemf.re/custom-selection/themes/" target="_blank" rel="noopener">__MSG_popupThemeLibrary__</a>
-    <div id="formdiv">
-      <div id="formdivurl" class="formdivel">
-        <select class="" id="custom_select" name="">
-          <option value="general">__MSG_popupDefault__</option>
-        </select><button type="button" id="remove_custom">__MSG_popupRemove__</button><br>
-        <label>__MSG_popupNewCustomUrl__: </label><br/><input type="text" placeholder="*.google.com" id="add_url"><button type="button" id="add_custom">__MSG_popupAdd__</button>
-        <!--<label>Url (optional): </label><br/><input type="url" placeholder="https://www.google.com/" id="url"><br/><br/>-->
-        <div id="url_div"><label>Url: </label><br/><input type="text" placeholder="*.google.com" id="change_url"></div>
-      </div>
-      <br><br>
-      <div id="formdivclr" class="formdivel">
-        <label>__MSG_popupColorFieldName__: </label><br>
-        <input id="color" value="#007EF3FF" data-jscolor="{}"><br>
-        <label>__MSG_popupBackgroundColorFieldName__: </label><br>
-        <input id="background_color" value="#007EF333" data-jscolor="{}">
-      </div>
-      <br><br>
-      <div id="formdivtxtsh" class="formdivel">
-        <input id="activate_textShadow" name="activate_textShadow" type="checkbox"><label for="activate_textShadow">__MSG_popupTextShadowActivation__</label><br>
-        <div id="textShadowOptions">
-          <label>__MSG_popupTextShadowColorFieldName__: </label><br>
-            <input value="#00000000" id="shadow-color">
-            <br>
-          <label>__MSG_popupTextShadowBlurFieldName__: </label><input type="number" placeholder="15" min="0" id="shadow-blur">
-        </div>
-      </div>
-      <br><br>
-      <div id="formdivtxtdec" class="formdivel">
-        <input id="activate_textDecoration" name="activate_textDecoration" type="checkbox"><label for="activate_textDecoration">__MSG_popupTextDecorationActivation__</label><br>
-        <div id="textDecorationOptions">
-          <label>__MSG_popupTextDecorationTypeFieldName__: </label><br>
-            <select class="" id="decoration_select" name="">
-              <option value="underline">__MSG_popupTextDecorationUnderline__</option>
-              <option value="overline">__MSG_popupTextDecorationOverline__</option>
-              <option value="line-through">__MSG_popupTextDecorationStrikeThrough__</option>
-              <option value="underline dotted">__MSG_popupTextDecorationDotted__</option>
-              <option value="underline wavy">__MSG_popupTextDecorationWave__</option>
-            </select>
-            <br>
-            <label>__MSG_popupDecorationColorFieldName__: </label><br>
-            <input id="decoration-color" value="#007EF333" data-jscolor="{}">
-        </div>
-      </div>
-      <div id="formdivprv" class="formdivel">
-        <label>__MSG_popupPreview__: </label><br/><p id="preview">Lorem ipsum</p>
-        <button type="submit" id="save_btn">__MSG_popupSave__</button>
-      </div>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./popup.css">
+<title>Custom selection</title>
+<script src="jscolor.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h1 id="title">__MSG_appName__</h1>
+  <a id="theme-library-link" href="https://projects.noemf.re/custom-selection/themes/?utm_source=popup&amp;utm_medium=referral&amp;utm_campaign=owned" target="_blank" rel="noopener">__MSG_popupThemeLibrary__</a>
+</header>
+
+<div id="formdiv">
+
+  <!-- Which site these styles apply to -->
+  <div id="formdivurl" class="formdivel">
+    <select id="custom_select" name="custom_select">
+      <option value="general">__MSG_popupDefault__</option>
+    </select>
+    <button type="button" id="remove_custom">__MSG_popupRemove__</button>
+
+    <label for="add_url">__MSG_popupNewCustomUrl__</label>
+    <input type="text" placeholder="*.google.com" id="add_url">
+    <button type="button" id="add_custom">__MSG_popupAdd__</button>
+
+    <div id="url_div">
+      <label for="change_url">Url</label>
+      <input type="text" placeholder="*.google.com" id="change_url">
     </div>
-    <!-- <div id="promotionaldiv">
-      <h2>Rate this extension</h2>
-      <p>If you enjoy this extension, please don't hesitate to rate it!👍</p>
-    </div> -->
-  </body>
-  <script type="text/javascript" src="./popup.js"></script>
-  </html>
-  
+  </div>
+
+  <!-- Colours -->
+  <div id="formdivclr" class="formdivel">
+    <label for="color">__MSG_popupColorFieldName__</label>
+    <input id="color" value="#007EF3FF" data-jscolor="{}">
+
+    <label for="background_color">__MSG_popupBackgroundColorFieldName__</label>
+    <input id="background_color" value="#007EF333" data-jscolor="{}">
+  </div>
+
+  <!-- Shadow -->
+  <div id="formdivtxtsh" class="formdivel">
+    <div class="toggle">
+      <input id="activate_textShadow" name="activate_textShadow" type="checkbox">
+      <label for="activate_textShadow">__MSG_popupTextShadowActivation__</label>
+    </div>
+    <div id="textShadowOptions">
+      <label for="shadow-color">__MSG_popupTextShadowColorFieldName__</label>
+      <input id="shadow-color" value="#00000000" data-jscolor="{}">
+
+      <label for="shadow-blur">__MSG_popupTextShadowBlurFieldName__</label>
+      <input type="number" placeholder="15" min="0" id="shadow-blur">
+    </div>
+  </div>
+
+  <!-- Decoration -->
+  <div id="formdivtxtdec" class="formdivel">
+    <div class="toggle">
+      <input id="activate_textDecoration" name="activate_textDecoration" type="checkbox">
+      <label for="activate_textDecoration">__MSG_popupTextDecorationActivation__</label>
+    </div>
+    <div id="textDecorationOptions">
+      <label for="decoration_select">__MSG_popupTextDecorationTypeFieldName__</label>
+      <select id="decoration_select" name="decoration_select">
+        <option value="underline">__MSG_popupTextDecorationUnderline__</option>
+        <option value="overline">__MSG_popupTextDecorationOverline__</option>
+        <option value="line-through">__MSG_popupTextDecorationStrikeThrough__</option>
+        <option value="underline dotted">__MSG_popupTextDecorationDotted__</option>
+        <option value="underline wavy">__MSG_popupTextDecorationWave__</option>
+      </select>
+
+      <label for="decoration-color">__MSG_popupDecorationColorFieldName__</label>
+      <input id="decoration-color" value="#007EF333" data-jscolor="{}">
+    </div>
+  </div>
+
+  <!-- Rating prompt: uncomment to enable, styles are already in popup.css
+  <div id="promotionaldiv">
+    <h2>__MSG_popupRateHeading__</h2>
+    <p>__MSG_popupRateBody__</p>
+  </div>
+  -->
+
+</div>
+
+<!-- Live preview + save, pinned -->
+<div id="formdivprv" class="formdivel">
+  <p class="preview-line">__MSG_popupPreviewBefore__ <span id="preview">__MSG_popupPreviewSelected__</span> __MSG_popupPreviewAfter__</p>
+  <button type="submit" id="save_btn">__MSG_popupSave__</button>
+</div>
+
+<script type="text/javascript" src="./popup.js"></script>
+</body>
+</html>

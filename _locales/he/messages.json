@@ -6,10 +6,10 @@
     "message": "התאמה אישית של בחירת טקסט: צבעים, צללים ועיטורים. עדכונים בזמן אמת עם ערכות נושא גלובליות ולפי אתר."
   },
   "popupColorFieldName": {
-    "message": "צֶבַע"
+    "message": "צבע הטקסט"
   },
   "popupBackgroundColorFieldName": {
-    "message": "צבע רקע"
+    "message": "צבע ההדגשה"
   },
   "popupTextShadowColorFieldName": {
     "message": "צבע צל טקסט"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "שגיאה בשמירת העדפות"
+  },
+  "popupPreviewBefore": {
+    "message": "טקסט רגיל כאן."
+  },
+  "popupPreviewSelected": {
+    "message": "כך נראית הבחירה."
+  },
+  "popupPreviewAfter": {
+    "message": "עוד טקסט כאן."
+  },
+  "popupRateHeading": {
+    "message": "דרגו את התוסף הזה"
+  },
+  "popupRateBody": {
+    "message": "אם הוא מועיל לכם, דירוג עוזר מאוד."
   }
 }

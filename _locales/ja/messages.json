@@ -6,10 +6,10 @@
     "message": "テキスト選択を完全カスタマイズ：色、影、装飾。リアルタイム更新、グローバルおよびドメイン別のテーマ設定が可能。"
   },
   "popupColorFieldName": {
-    "message": "文字色"
+    "message": "文字の色"
   },
   "popupBackgroundColorFieldName": {
-    "message": "背景色"
+    "message": "ハイライトの色"
   },
   "popupTextShadowColorFieldName": {
     "message": "テキストシャドウの色"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "設定の保存中にエラーが発生しました。"
+  },
+  "popupPreviewBefore": {
+    "message": "通常のテキストです。"
+  },
+  "popupPreviewSelected": {
+    "message": "選択するとこう見えます。"
+  },
+  "popupPreviewAfter": {
+    "message": "さらにテキストが続きます。"
+  },
+  "popupRateHeading": {
+    "message": "この拡張機能を評価"
+  },
+  "popupRateBody": {
+    "message": "お役に立てましたら、評価をいただけると助かります。"
   }
 }

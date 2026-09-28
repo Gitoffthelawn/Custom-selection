@@ -6,10 +6,10 @@
     "message": "टेक्स्ट चयन को कस्टमाइज़ करें: रंग, छाया और सजावट। ग्लोबल और डोमेन-विशिष्ट थीम के साथ रीयल-टाइम अपडेट।"
   },
   "popupColorFieldName": {
-    "message": "रंग"
+    "message": "टेक्स्ट का रंग"
   },
   "popupBackgroundColorFieldName": {
-    "message": "पृष्ठभूमि का रंग"
+    "message": "हाइलाइट का रंग"
   },
   "popupTextShadowColorFieldName": {
     "message": "पाठ छाया रंग"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "प्राथमिकताएँ सहेजने में त्रुटि"
+  },
+  "popupPreviewBefore": {
+    "message": "यहाँ सामान्य टेक्स्ट।"
+  },
+  "popupPreviewSelected": {
+    "message": "चयन ऐसा दिखता है।"
+  },
+  "popupPreviewAfter": {
+    "message": "यहाँ और टेक्स्ट।"
+  },
+  "popupRateHeading": {
+    "message": "इस एक्सटेंशन को रेट करें"
+  },
+  "popupRateBody": {
+    "message": "अगर यह उपयोगी लगे, तो रेटिंग बहुत मदद करती है।"
   }
 }

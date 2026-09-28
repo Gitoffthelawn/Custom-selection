@@ -1,292 +1,376 @@
+/* ==========================================================================
+   Custom Selection — popup
+   Tokens first; dark mode is a token swap, nothing below it changes.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  --paper:       #ffffff;
+  --shelf:       #f4f5f7;
+  --ink:         #17171a;
+  --ink-soft:    #6a6a73;
+  --rule:        rgba(23, 23, 26, 0.12);
+  --rule-strong: rgba(23, 23, 26, 0.18);
+  --accent:      #007ef3;
+  --accent-ink:  #ffffff;
+  --go:          #157a3f;
+  --go-bg:       #e3f5e9;
+  --stop:        #a32626;
+  --stop-bg:     #fbe6e6;
+
+  --gap:         14px;
+  --radius:      6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* color-scheme makes checkboxes, selects and the number spinner render
+       dark natively — without it an unchecked box is a solid white slab. */
+    color-scheme: dark;
+
+    --paper:       #1c1c20;
+    --shelf:       #26262c;
+    --ink:         #e9e9ec;
+    --ink-soft:    #9a9aa4;
+    --rule:        rgba(255, 255, 255, 0.14);
+    --rule-strong: rgba(255, 255, 255, 0.22);
+    --accent:      #4da3ff;
+    --accent-ink:  #0f1720;
+    --go:          #b7f0cd;
+    --go-bg:       #2a6043;
+    --stop:        #ffc4c4;
+    --stop-bg:     #6b2c2c;
+  }
+}
+
+/* ==========================================================================
+   Frame
+   ========================================================================== */
+
 * {
-  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  box-sizing: border-box;
+  font-family: Futura, "Avenir Next", Avenir, "Century Gothic",
+               "URW Gothic", system-ui, sans-serif;
 }
 
 html {
-  height: 500px;
-  width: 300px;
+  width: 320px;
+  background: var(--paper);
 }
 
 body {
-  align-items: center;
-  background: #fff;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  overflow-x: hidden;
-  text-align: center;
-  height: fit-content;
+  width: 320px;
+  min-height: 420px;
   margin: 0;
-  width: 100%;
-  width: 300px;
+  /* Bottom padding clears the fixed footer. The preview wraps to two lines
+     in most locales, so this is sized for that plus headroom. */
+  padding: 18px 18px 148px;
+  background: var(--paper);
+  color: var(--ink);
+  overflow-x: hidden;
 }
 
-#formdiv {
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
-}
-
-.formdivel {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
+/* ==========================================================================
+   Header
+   ========================================================================== */
 
 h1 {
-  color: black;
-  font-size: 30px;
-  font-weight: 200;
-  margin-top: 60px;
-}
-
-h2 {
-  margin: 0px;
-}
-
-label {
-  color: #0c0c0d;
-  font-size: 15px;
-  font-weight: 400;
-  text-emphasis: 700;
-}
-
-input {
-  border-color: rgba(12, 12, 13, 0.2);
-  border-radius: 2px;
-  margin-top: 8px;
-  outline: none;
-  width: 70%;
-}
-
-input[type="checkbox"] {
-  background: rgba(12, 12, 13, 0.1);
-  border: 1px rgba(12, 12, 13, 0.3);
-  height: 16px;
-  margin: 4px;
-  width: 16px;
-}
-
-input[type="checkbox"]:checked {
-  background: #0060df;
-}
-
-#textShadowOptions {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-#textDecorationOptions {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-#url_div {
-  display: none;
-}
-
-p {
-  width: 3cm;
-}
-
-input[type="text"] {
-  height: 32px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-input[type="url"] {
-  height: 32px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-input:hover {
-  border-color: rgba(12, 12, 13, 0.3);
-}
-
-input:focus {
-  border: #0a84ff solid 2px;
-  box-shadow: 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, 0.3);
-}
-
-select {
-  height: 32px;
-  padding-left: 8px;
-  padding-right: 8px;
-  width: 100%;
-  border: none;
-  background-color: #f3f3f3;
-  box-shadow: 0 0 15px #f3f3f3;
-}
-
-input:invalid {
-  border: #d70022 solid 2px;
-  box-shadow: 0 0 0 1px #d70022, 0 0 0 4px rgba(251, 0, 34, 0.3);
-}
-
-input[type="url"]:focus:valid {
-  border: #0c2 solid 2px;
-  box-shadow: 0 0 0 1px #0c2, 0 0 0 4px rgba(0, 204, 34, 0.3);
-}
-
-input[type="url"]:placeholder-shown {
-  border-color: rgba(12, 12, 13, 0.2) !important;
-  box-shadow: none !important;
-}
-input[type="url"]:placeholder-shown:hover {
-  border-color: rgba(12, 12, 13, 0.3) !important;
-}
-input[type="url"]:placeholder-shown:focus {
-  border-color: #0a84ff !important;
-  box-shadow: 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, 0.3) !important;
-}
-
-
-#textSadowOptions {
-  display: none;
-}
-
-#remove_custom {
-  display: none;
-  cursor: pointer;
-  margin-top: 5px;
-  background-color: #ffb3b3;
-  box-shadow: 0 0 15px #ffb3b3;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-  transition: 0.5s;
-}
-#remove_custom:hover {
-  background-color: #ff8080;
-  box-shadow: 0 0 15px #ff8080;
-}
-#add_custom {
-  cursor: pointer;
-  margin-top: 5px;
-  background-color: #b3ffb3;
-  box-shadow: 0 0 15px #b3ffb3;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-  transition: 0.5s;
-}
-#add_custom:hover {
-  background-color: #80ff80;
-  box-shadow: 0 0 15px #80ff80;
-}
-
-.colorinputcouple {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#save_btn {
-  background: #0060df;
-  border-radius: 2px;
-  border-style: none;
-  color: #fff;
-  cursor: pointer;
-  height: 32px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: auto;
-}
-
-#save_btn:hover {
-  background: #003eaa;
-}
-
-#save_btn:active {
-  background: #002275;
-}
-
-#save_btn:focus {
-  box-shadow: 0 0 0 1px #0a84ff inset, 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, 0.3);
-}
-
-#promotionaldiv {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  padding: 10px;
-  background-color: #bfbfbf;
-  border-radius: 5px;
-  box-shadow: 0 0 15px #6e6e6e;
-  width: 20vw;
-}
-
-#promotionaldiv p {
-  width: 100%;
-  height: 100%;
-}
-
-#formdivprv {
-  position: fixed;
-  padding-top: 5px;
-  bottom: 0;
-  left: 0;
-  background-color: #f3f3f3;
-  box-shadow: 0 0 15px rgb(200, 200, 200);
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink);
 }
 
 #theme-library-link {
   display: inline-block;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.55);
+  margin: 3px 0 0;
+  font-size: 12.5px;
+  color: var(--accent);
   text-decoration: none;
-  opacity: 0.95;
-}
-#theme-library-link:hover {
-  color: rgba(0, 0, 0, 0.8);
-  text-decoration: underline;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
 }
 
-#formdivtxtdec {
-  margin-bottom: 3cm;
+#theme-library-link:hover,
+#theme-library-link:focus-visible {
+  border-bottom-color: currentColor;
 }
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+#formdiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.formdivel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  padding: var(--gap) 0;
+  border-top: 1px solid var(--rule);
+}
+
+#formdivurl {
+  border-top: none;
+  padding-top: 16px;
+}
+
+/* Sections JS toggles open and closed. Keep display:none as the resting
+   state so existing show/hide code keeps working. */
+#textShadowOptions,
+#textDecorationOptions {
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  width: 100%;
+  margin-top: 6px;
+}
+
+#url_div {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ==========================================================================
+   Labels and fields
+   ========================================================================== */
+
+label {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+input,
+select {
+  width: 100%;
+  height: 32px;
+  font-size: 13.5px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  outline: none;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"] {
+  padding: 0 9px;
+}
+
+select {
+  padding: 0 6px;
+  background: var(--shelf);
+  border-color: transparent;
+  cursor: pointer;
+}
+
+input:hover,
+select:hover {
+  border-color: var(--ink-soft);
+}
+
+input:focus-visible,
+select:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+input:invalid {
+  border-color: var(--stop);
+}
+
+input[type="url"]:placeholder-shown {
+  border-color: var(--rule);
+  box-shadow: none;
+}
+
+/* jscolor writes padding-left and a swatch background inline on these.
+   Don't set padding or background here or the swatch breaks. */
+input[data-jscolor] {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   Checkbox rows
+   ========================================================================== */
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.toggle label {
+  font-size: 13.5px;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+/* color-scheme handles the unchecked state; accent-color the checked one. */
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex: none;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+#add_custom,
+#remove_custom {
+  align-self: flex-start;
+  width: auto;
+  height: 28px;
+  padding: 0 11px;
+  font-size: 12.5px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: filter 0.15s;
+}
+
+#add_custom {
+  color: var(--go);
+  background: var(--go-bg);
+}
+
+#remove_custom {
+  display: none;              /* JS reveals this */
+  color: var(--stop);
+  background: var(--stop-bg);
+}
+
+#add_custom:hover,
+#remove_custom:hover {
+  filter: brightness(0.94);
+}
+
+#add_custom:focus-visible,
+#remove_custom:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+#save_btn {
+  width: 100%;
+  height: 34px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+#save_btn:hover {
+  filter: brightness(1.08);
+}
+
+#save_btn:active {
+  filter: brightness(0.92);
+}
+
+#save_btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Preview — the one loud element
+   ========================================================================== */
+
+#formdivprv {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  padding: 12px 18px 14px;
+  background: var(--shelf);
+  border-top: 1px solid var(--rule-strong);
+}
+
+.preview-line {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  text-align: left;
+}
+
+/* #preview carries the live styles written by popup.js */
+#preview {
+  color: inherit;
+}
+
+/* ==========================================================================
+   Rating prompt — enable by uncommenting it in popup.html
+   ========================================================================== */
+
+#promotionaldiv {
+  margin-top: var(--gap);
+  padding: 11px 13px;
+  background: var(--shelf);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+#promotionaldiv h2 {
+  margin: 0 0 4px;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+#promotionaldiv p {
+  margin: 0;
+  width: auto;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+/* ==========================================================================
+   Scrollbar, selection guards, motion
+   ========================================================================== */
 
 ::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
+  background: var(--rule);
   border-radius: 10px;
-  background: #a8a8a8;
-}
-::-webkit-scrollbar-thumb:window-inactive {
-  background: #a8a8a865;
 }
 
-h1, h2, label, p, #preview {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ink-soft);
+}
+
+h1,
+label,
+.preview-line,
+#promotionaldiv {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
 }

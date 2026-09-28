@@ -6,10 +6,10 @@
     "message": "텍스트 선택을 완벽하게 맞춤 설정: 색상, 그림자, 장식. 글로벌 및 도메인별 테마로 실시간 업데이트됩니다."
   },
   "popupColorFieldName": {
-    "message": "글자 색상"
+    "message": "텍스트 색상"
   },
   "popupBackgroundColorFieldName": {
-    "message": "배경색"
+    "message": "하이라이트 색상"
   },
   "popupTextShadowColorFieldName": {
     "message": "그림자 색상"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "설정을 저장하는 중 오류가 발생했습니다."
+  },
+  "popupPreviewBefore": {
+    "message": "일반 텍스트입니다."
+  },
+  "popupPreviewSelected": {
+    "message": "선택하면 이렇게 보입니다."
+  },
+  "popupPreviewAfter": {
+    "message": "텍스트가 더 있습니다."
+  },
+  "popupRateHeading": {
+    "message": "이 확장 프로그램 평가하기"
+  },
+  "popupRateBody": {
+    "message": "유용하셨다면 평가를 남겨 주시면 큰 도움이 됩니다."
   }
 }

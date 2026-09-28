@@ -6,10 +6,10 @@
     "message": "Kustomisasi seleksi teks: warna, bayangan & dekorasi. Pembaruan real-time dengan tema global & spesifik domain."
   },
   "popupColorFieldName": {
-    "message": "Warna"
+    "message": "Warna teks"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Warna latar belakang"
+    "message": "Warna sorotan"
   },
   "popupTextShadowColorFieldName": {
     "message": "Warna bayangan teks"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "Terjadi kesalahan saat menyimpan preferensi"
+  },
+  "popupPreviewBefore": {
+    "message": "Teks biasa di sini."
+  },
+  "popupPreviewSelected": {
+    "message": "Beginilah tampilan seleksi."
+  },
+  "popupPreviewAfter": {
+    "message": "Teks lainnya di sini."
+  },
+  "popupRateHeading": {
+    "message": "Beri rating ekstensi ini"
+  },
+  "popupRateBody": {
+    "message": "Jika bermanfaat, rating sangat membantu."
   }
 }

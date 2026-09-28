@@ -6,10 +6,10 @@
     "message": "টেক্সট নির্বাচন কাস্টমাইজ করুন: রং, ছায়া এবং সজ্জা। গ্লোবাল এবং ডোমেইন-ভিত্তিক থিম সহ রিয়েল-টাইম আপডেট।"
   },
   "popupColorFieldName": {
-    "message": "রঙ"
+    "message": "লেখার রঙ"
   },
   "popupBackgroundColorFieldName": {
-    "message": "পেছনের রং"
+    "message": "হাইলাইটের রঙ"
   },
   "popupTextShadowColorFieldName": {
     "message": "পাঠ্য ছায়ার রঙ"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "পছন্দগুলি সংরক্ষণে ত্রুটি৷"
+  },
+  "popupPreviewBefore": {
+    "message": "এখানে সাধারণ লেখা।"
+  },
+  "popupPreviewSelected": {
+    "message": "নির্বাচন এমন দেখায়।"
+  },
+  "popupPreviewAfter": {
+    "message": "এখানে আরও লেখা।"
+  },
+  "popupRateHeading": {
+    "message": "এই এক্সটেনশনটি রেট করুন"
+  },
+  "popupRateBody": {
+    "message": "উপকারী মনে হলে একটি রেটিং অনেক সাহায্য করে।"
   }
 }

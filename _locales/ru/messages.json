@@ -6,10 +6,10 @@
     "message": "Настройка выделения текста: цвета, тени и декор. Обновление в реальном времени, глобальные и отдельные темы для сайтов."
   },
   "popupColorFieldName": {
-    "message": "Цвет"
+    "message": "Цвет текста"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Фоновый цвет"
+    "message": "Цвет выделения"
   },
   "popupTextShadowColorFieldName": {
     "message": "Цвет тени текста"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "Ошибка сохранения настроек"
+  },
+  "popupPreviewBefore": {
+    "message": "Обычный текст."
+  },
+  "popupPreviewSelected": {
+    "message": "Так выглядит выделение."
+  },
+  "popupPreviewAfter": {
+    "message": "Ещё немного текста."
+  },
+  "popupRateHeading": {
+    "message": "Оценить расширение"
+  },
+  "popupRateBody": {
+    "message": "Если расширение полезно, оценка очень помогает."
   }
 }

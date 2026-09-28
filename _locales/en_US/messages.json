@@ -6,10 +6,10 @@
     "message": "Fully customize text selection: colors, shadows & decorations. Real-time updates with global & domain-specific themes."
   },
   "popupColorFieldName": {
-    "message": "Color"
+    "message": "Text color"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Background color"
+    "message": "Highlight color"
   },
   "popupTextShadowColorFieldName": {
     "message": "Text shadow color"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "Error saving preferences"
+  },
+  "popupPreviewBefore": {
+    "message": "Standard text here."
+  },
+  "popupPreviewSelected": {
+    "message": "This is how the selection looks."
+  },
+  "popupPreviewAfter": {
+    "message": "More text here."
+  },
+  "popupRateHeading": {
+    "message": "Rate this extension"
+  },
+  "popupRateBody": {
+    "message": "If you find it useful, a rating really helps."
   }
 }

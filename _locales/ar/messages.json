@@ -6,10 +6,10 @@
     "message": "تخصيص تحديد النص: الألوان والظلال والزخارف. تحديثات فورية مع سمات عامة ومخصصة لكل موقع."
   },
   "popupColorFieldName": {
-    "message": "لون"
+    "message": "لون النص"
   },
   "popupBackgroundColorFieldName": {
-    "message": "لون الخلفية"
+    "message": "لون التظليل"
   },
   "popupTextShadowColorFieldName": {
     "message": "لون ظل النص"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "حدث خطأ أثناء حفظ التفضيلات"
+  },
+  "popupPreviewBefore": {
+    "message": "نص عادي هنا."
+  },
+  "popupPreviewSelected": {
+    "message": "هكذا يبدو التحديد."
+  },
+  "popupPreviewAfter": {
+    "message": "المزيد من النص هنا."
+  },
+  "popupRateHeading": {
+    "message": "قيّم هذه الإضافة"
+  },
+  "popupRateBody": {
+    "message": "إذا وجدتها مفيدة، فإن التقييم يساعد كثيرًا."
   }
 }

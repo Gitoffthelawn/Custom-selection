@@ -6,10 +6,10 @@
     "message": "ٹیکسٹ سلیکشن کو حسب ضرورت بنائیں: رنگ، سائے اور سجاوٹ۔ گلوبل اور ڈومین مخصوص تھیمز کے ساتھ ریئل ٹائم اپ ڈیٹس۔"
   },
   "popupColorFieldName": {
-    "message": "رنگ"
+    "message": "متن کا رنگ"
   },
   "popupBackgroundColorFieldName": {
-    "message": "پس منظر کا رنگ"
+    "message": "ہائی لائٹ کا رنگ"
   },
   "popupTextShadowColorFieldName": {
     "message": "ٹیکسٹ شیڈو کا رنگ"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "ترجیحات کو محفوظ کرنے میں خرابی۔"
+  },
+  "popupPreviewBefore": {
+    "message": "یہاں عام متن۔"
+  },
+  "popupPreviewSelected": {
+    "message": "انتخاب ایسا دکھتا ہے۔"
+  },
+  "popupPreviewAfter": {
+    "message": "یہاں مزید متن۔"
+  },
+  "popupRateHeading": {
+    "message": "اس ایکسٹینشن کو ریٹ کریں"
+  },
+  "popupRateBody": {
+    "message": "اگر یہ مفید لگے تو ریٹنگ بہت مدد کرتی ہے۔"
   }
 }

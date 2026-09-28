@@ -6,10 +6,10 @@
     "message": "Metin seçimini özelleştirin: renkler, gölgeler ve süslemeler. Küresel ve siteye özel temalarla gerçek zamanlı güncellemeler."
   },
   "popupColorFieldName": {
-    "message": "Renk"
+    "message": "Metin rengi"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Arka plan rengi"
+    "message": "Vurgu rengi"
   },
   "popupTextShadowColorFieldName": {
     "message": "Metin gölge rengi"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "Tercihler kaydedilirken hata oluştu"
+  },
+  "popupPreviewBefore": {
+    "message": "Burada normal metin."
+  },
+  "popupPreviewSelected": {
+    "message": "Seçim böyle görünür."
+  },
+  "popupPreviewAfter": {
+    "message": "Burada daha fazla metin."
+  },
+  "popupRateHeading": {
+    "message": "Bu uzantıyı değerlendirin"
+  },
+  "popupRateBody": {
+    "message": "Faydalı bulduysanız, bir değerlendirme çok yardımcı olur."
   }
 }

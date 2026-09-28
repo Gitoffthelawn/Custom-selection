@@ -6,10 +6,10 @@
     "message": "Personalize a seleção de texto: cores, sombras e decorações. Atualização em tempo real com temas globais e por domínio."
   },
   "popupColorFieldName": {
-    "message": "Cor"
+    "message": "Cor do texto"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Cor de fundo"
+    "message": "Cor do destaque"
   },
   "popupTextShadowColorFieldName": {
     "message": "Cor da sombra do texto"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "Erro ao salvar preferências"
+  },
+  "popupPreviewBefore": {
+    "message": "Texto normal aqui."
+  },
+  "popupPreviewSelected": {
+    "message": "É assim que a seleção fica."
+  },
+  "popupPreviewAfter": {
+    "message": "Mais texto aqui."
+  },
+  "popupRateHeading": {
+    "message": "Avaliar esta extensão"
+  },
+  "popupRateBody": {
+    "message": "Se lhe for útil, uma avaliação ajuda muito."
   }
 }

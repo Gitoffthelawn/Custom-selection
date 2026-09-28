@@ -6,10 +6,10 @@
     "message": "Προσαρμόστε την επιλογή κειμένου: χρώματα, σκιές & διακόσμηση. Ενημερώσεις σε πραγματικό χρόνο με καθολικά & τοπικά θέματα."
   },
   "popupColorFieldName": {
-    "message": "Χρώμα"
+    "message": "Χρώμα κειμένου"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Χρώμα του φόντου"
+    "message": "Χρώμα επισήμανσης"
   },
   "popupTextShadowColorFieldName": {
     "message": "Χρώμα σκιάς κειμένου"
@@ -76,5 +76,20 @@
   },
   "notifFailContent": {
     "message": "Σφάλμα αποθήκευσης προτιμήσεων"
+  },
+  "popupPreviewBefore": {
+    "message": "Κανονικό κείμενο εδώ."
+  },
+  "popupPreviewSelected": {
+    "message": "Έτσι φαίνεται η επιλογή."
+  },
+  "popupPreviewAfter": {
+    "message": "Κι άλλο κείμενο εδώ."
+  },
+  "popupRateHeading": {
+    "message": "Αξιολογήστε αυτήν την επέκταση"
+  },
+  "popupRateBody": {
+    "message": "Αν σας φαίνεται χρήσιμη, μια αξιολόγηση βοηθάει πολύ."
   }
 }
