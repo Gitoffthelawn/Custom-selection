@@ -72,7 +72,7 @@ async function restoreOptions(tab) {
   }
 
   // Fallback to default settings if no custom rule matched and the URL is permitted
-  if (!injected && storage.witness && !/^((chrome:\/\/|chrome-extension:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { 
+  if (!injected && storage.witness && !/^((chrome:\/\/|chrome-extension:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/chromewebstore\.google\.com.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { 
     css = generateCSS(storage);
   }
 
@@ -94,7 +94,7 @@ async function update_action_icon(tabin) {
   var storage = await chrome.storage.local.get(); 
   
   // Guard against internal pages or missing URLs
-  if (!tab.url || /^((chrome:\/\/|chrome-extension:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { 
+  if (!tab.url || /^((chrome:\/\/|chrome-extension:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/chromewebstore\.google\.com.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { 
     browser_action.setIcon({path: './images/icondisabled.png', tabId: tab.id}); // Isolate to tabId
     return; 
   }
