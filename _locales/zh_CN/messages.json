@@ -3,7 +3,7 @@
     "message": "定制选择"
   },
   "appDesc": {
-    "message": "完全自定义文本选择：颜色、阴影和装饰。支持全局及特定域名的实时主题更新。"
+    "message": "把 Chrome 默认的蓝色高亮颜色换成任意颜色。无需刷新即时生效，支持按网站设置主题。"
   },
   "popupColorFieldName": {
     "message": "文字颜色"

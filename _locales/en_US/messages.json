@@ -3,7 +3,7 @@
     "message": "Custom selection"
   },
   "appDesc": {
-    "message": "Fully customize text selection: colors, shadows & decorations. Real-time updates with global & domain-specific themes."
+    "message": "Change Chrome's default blue highlight to any color. Applies instantly with no tab refresh, plus per-site themes."
   },
   "popupColorFieldName": {
     "message": "Text color"
