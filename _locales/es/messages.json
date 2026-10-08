@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "La selección personalizada"
+    "message": "Selección personalizada"
   },
   "appDesc": {
-    "message": "Cambia el azul de resaltado de Chrome por el color que quieras. Se aplica al instante sin recargar, y temas por sitio."
+    "message": "Cambia el azul de resaltado de Chrome por el color que quieras. Se aplica al instante sin recargar la página, con temas por sitio."
   },
   "popupColorFieldName": {
     "message": "Color del texto"
@@ -30,10 +30,10 @@
     "message": "Color de decoración"
   },
   "popupTextDecorationUnderline": {
-    "message": "Subrayar"
+    "message": "Subrayado"
   },
   "popupTextDecorationOverline": {
-    "message": "sobrelínea"
+    "message": "Línea superior"
   },
   "popupTextDecorationStrikeThrough": {
     "message": "Tachado"
@@ -42,7 +42,7 @@
     "message": "Punteado"
   },
   "popupTextDecorationWave": {
-    "message": "Ola"
+    "message": "Ondulado"
   },
   "popupNewCustomUrl": {
     "message": "Nueva URL personalizada"
@@ -54,19 +54,19 @@
     "message": "Eliminar"
   },
   "popupDefault": {
-    "message": "Por defecto"
+    "message": "Predeterminado"
   },
   "popupPreview": {
-    "message": "Avance"
+    "message": "Vista previa"
   },
   "popupSave": {
-    "message": "Ahorrar"
+    "message": "Guardar"
   },
   "popupThemeLibrary": {
     "message": "Explorar temas"
   },
   "notifSuccessTitle": {
-    "message": "Selección personalizada: ahorro exitoso"
+    "message": "Selección personalizada: Guardado correcto"
   },
   "notifSuccessContent": {
     "message": "Preferencias guardadas correctamente"

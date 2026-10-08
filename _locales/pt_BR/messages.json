@@ -3,7 +3,7 @@
     "message": "Seleção personalizada"
   },
   "appDesc": {
-    "message": "Mude o azul do destaque do Chrome para a cor que quiser. Aplica na hora, sem recarregar abas, e temas por site."
+    "message": "Mude o azul do destaque do Chrome para a cor que quiser. Aplica-se na hora, sem recarregar abas, com temas por site."
   },
   "popupColorFieldName": {
     "message": "Cor do texto"
@@ -42,7 +42,7 @@
     "message": "Pontilhado"
   },
   "popupTextDecorationWave": {
-    "message": "Aceno"
+    "message": "Ondulado"
   },
   "popupNewCustomUrl": {
     "message": "Novo URL personalizado"
@@ -66,7 +66,7 @@
     "message": "Explorar temas"
   },
   "notifSuccessTitle": {
-    "message": "Seleção personalizada: Salvando sucesso"
+    "message": "Seleção personalizada: salvo com sucesso"
   },
   "notifSuccessContent": {
     "message": "Preferências salvas com sucesso"

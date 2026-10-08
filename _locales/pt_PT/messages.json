@@ -3,7 +3,7 @@
     "message": "Seleção personalizada"
   },
   "appDesc": {
-    "message": "Mude o azul do destaque do Chrome para a cor que quiser. Aplica-se de imediato, sem recarregar, e temas por site."
+    "message": "Mude o azul do destaque do Chrome para a cor que quiser. Aplica-se de imediato, sem recarregar, com temas por site."
   },
   "popupColorFieldName": {
     "message": "Cor do texto"
@@ -42,7 +42,7 @@
     "message": "Pontilhado"
   },
   "popupTextDecorationWave": {
-    "message": "Aceno"
+    "message": "Ondulado"
   },
   "popupNewCustomUrl": {
     "message": "Novo URL personalizado"
@@ -57,25 +57,25 @@
     "message": "Padrão"
   },
   "popupPreview": {
-    "message": "Visualização"
+    "message": "Pré-visualização"
   },
   "popupSave": {
-    "message": "Salvar"
+    "message": "Guardar"
   },
   "popupThemeLibrary": {
     "message": "Navegar pelos temas"
   },
   "notifSuccessTitle": {
-    "message": "Seleção personalizada: Salvando sucesso"
+    "message": "Seleção personalizada: guardado com sucesso"
   },
   "notifSuccessContent": {
-    "message": "Preferências salvas com sucesso"
+    "message": "Preferências guardadas com sucesso"
   },
   "notifFailTitle": {
-    "message": "Seleção personalizada: erro ao salvar"
+    "message": "Seleção personalizada: erro ao guardar"
   },
   "notifFailContent": {
-    "message": "Erro ao salvar preferências"
+    "message": "Erro ao guardar preferências"
   },
   "popupPreviewBefore": {
     "message": "Texto normal aqui."

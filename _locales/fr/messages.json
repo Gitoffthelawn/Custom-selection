@@ -3,7 +3,7 @@
     "message": "Sélection personnalisée"
   },
   "appDesc": {
-    "message": "Changez la couleur de surlignage de Chrome. Application instantanée sans rechargement, et thèmes par site."
+    "message": "Changez la couleur de surlignage de Chrome. Application instantanée sans rechargement, avec des thèmes par site."
   },
   "popupColorFieldName": {
     "message": "Couleur du texte"
@@ -30,10 +30,10 @@
     "message": "Couleur de décoration"
   },
   "popupTextDecorationUnderline": {
-    "message": "Souligner"
+    "message": "Souligné"
   },
   "popupTextDecorationOverline": {
-    "message": "Surligner"
+    "message": "Ligne supérieure"
   },
   "popupTextDecorationStrikeThrough": {
     "message": "Barré"
@@ -42,7 +42,7 @@
     "message": "Pointillé"
   },
   "popupTextDecorationWave": {
-    "message": "Vague"
+    "message": "Ondulé"
   },
   "popupNewCustomUrl": {
     "message": "Nouvelle URL personnalisée"
@@ -54,13 +54,13 @@
     "message": "Retirer"
   },
   "popupDefault": {
-    "message": "Défaut"
+    "message": "Par défaut"
   },
   "popupPreview": {
     "message": "Aperçu"
   },
   "popupSave": {
-    "message": "Sauvegarder"
+    "message": "Enregistrer"
   },
   "popupThemeLibrary": {
     "message": "Parcourir les thèmes"

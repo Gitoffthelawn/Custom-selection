@@ -1,6 +1,6 @@
 {
   "appName": {
-    "message": "Пользовательский выбор"
+    "message": "Настраиваемое выделение"
   },
   "appDesc": {
     "message": "Замените стандартный синий цвет выделения Chrome на любой. Применяется сразу, без перезагрузки, темы для сайтов."
@@ -18,25 +18,25 @@
     "message": "Размытие тени текста (в пикселях)"
   },
   "popupTextShadowActivation": {
-    "message": "Активировать тень текста"
+    "message": "Включить тень текста"
   },
   "popupTextDecorationActivation": {
-    "message": "Активировать оформление текста"
+    "message": "Включить оформление текста"
   },
   "popupTextDecorationTypeFieldName": {
-    "message": "Тип декорации"
+    "message": "Тип оформления"
   },
   "popupDecorationColorFieldName": {
-    "message": "Цвет декорации"
+    "message": "Цвет оформления"
   },
   "popupTextDecorationUnderline": {
-    "message": "Подчеркивание"
+    "message": "Подчёркивание"
   },
   "popupTextDecorationOverline": {
-    "message": "Надчеркивание"
+    "message": "Надчёркивание"
   },
   "popupTextDecorationStrikeThrough": {
-    "message": "Зачеркивание"
+    "message": "Зачёркивание"
   },
   "popupTextDecorationDotted": {
     "message": "Пунктирная линия"
@@ -66,13 +66,13 @@
     "message": "Обзор тем"
   },
   "notifSuccessTitle": {
-    "message": "Пользовательский выбор: успешно сохранено"
+    "message": "Настраиваемое выделение: успешно сохранено"
   },
   "notifSuccessContent": {
     "message": "Настройки успешно сохранены"
   },
   "notifFailTitle": {
-    "message": "Пользовательский выбор: ошибка сохранения"
+    "message": "Настраиваемое выделение: ошибка сохранения"
   },
   "notifFailContent": {
     "message": "Ошибка сохранения настроек"
